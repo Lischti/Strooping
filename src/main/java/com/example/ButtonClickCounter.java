@@ -23,7 +23,6 @@ public class ButtonClickCounter extends JFrame {
         clickLimitComboBox.setSelectedIndex(1); // Standardwert: 10 Klicks
 
         button.addActionListener(new ActionListener() {
-            @Override
             public void actionPerformed(ActionEvent e) {
                 handleClick();
             }
