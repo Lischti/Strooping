@@ -17,10 +17,10 @@ public class ButtonClickCounter extends JFrame {
         button = new JButton("Klick mich!");
         clickCount = 0;
 
-        // ComboBox für die maximale Anzahl der Klicks
-        Integer[] clickLimits = { 5, 10, 15, 20 }; // Anpassbar nach Bedarf
+        // ComboBox für Anzahl der Klicks
+        Integer[] clickLimits = { 5, 10, 15, 20 }; // Anpassbar
         clickLimitComboBox = new JComboBox<>(clickLimits);
-        clickLimitComboBox.setSelectedIndex(1); // Standardwert: 10 Klicks
+        clickLimitComboBox.setSelectedIndex(1);
 
         button.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
@@ -28,7 +28,6 @@ public class ButtonClickCounter extends JFrame {
             }
         });
 
-        // Layout mit JPanel für die Komponenten
         JPanel panel = new JPanel();
         panel.add(button);
         panel.add(clickLimitComboBox);
@@ -57,5 +56,5 @@ public class ButtonClickCounter extends JFrame {
     public static void main(String[] args) {
         new ButtonClickCounter();
     }
-    
+
 }
