@@ -18,7 +18,7 @@ public class ButtonClickCounter extends JFrame {
         clickCount = 0;
 
         // ComboBox für Anzahl der Klicks
-        Integer[] clickLimits = { 5, 10, 15, 20 }; // Anpassbar
+        Integer[] clickLimits = { 15, 30, 40 }; // Anpassbar
         clickLimitComboBox = new JComboBox<>(clickLimits);
         clickLimitComboBox.setSelectedIndex(1);
 
